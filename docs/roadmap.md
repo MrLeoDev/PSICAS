@@ -8,7 +8,7 @@ This roadmap intentionally starts with product/domain clarity before UI work.
 - [x] document product vision;
 - [x] define initial architecture;
 - [x] identify authoritative public training-plan sources;
-- [ ] choose exact supported Laravel/PHP/Node versions;
+- [x] choose exact supported Laravel/PHP/Node versions;
 - [ ] initialize Laravel + Vue + Inertia + PostgreSQL;
 - [ ] add Docker development environment;
 - [ ] add CI baseline;
