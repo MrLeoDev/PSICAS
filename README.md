@@ -8,9 +8,9 @@ This repository is **not a continuation of the historical codebase**. PSICAS V2 
 
 ## Project status
 
-🚧 **Design / foundation phase**
+🚧 **Foundation phase**
 
-The product specification and technical architecture are being defined before application code is introduced.
+The product scope, architecture, official data-source strategy and initial runtime stack are defined. The next step is application initialization.
 
 ## Product goals
 
@@ -26,17 +26,19 @@ PSICAS should make it possible to:
 - import and normalize public official training-plan data where possible;
 - expose only fictional/demo personal data in the public repository.
 
-## Planned stack
+## Initial stack
 
-- **Backend:** Laravel / PHP
-- **Frontend:** Vue + Inertia
-- **Database:** PostgreSQL
+- **Backend:** Laravel 13 / PHP 8.5
+- **Frontend:** Vue 3 + Inertia 3 + TypeScript
+- **UI foundation:** Tailwind CSS + shadcn-vue
+- **Database:** PostgreSQL 18
+- **Node.js:** 24 LTS
 - **Testing:** Pest / PHPUnit
 - **Quality:** Laravel Pint + static analysis
 - **Environment:** Docker
 - **CI:** GitHub Actions
 
-Exact framework/runtime versions will be pinned when the application skeleton is initialized.
+The rationale is documented in [`ADR 0001`](docs/adr/0001-application-stack.md).
 
 ## Architecture principles
 
@@ -52,7 +54,9 @@ Exact framework/runtime versions will be pinned when the application skeleton is
 
 - [`docs/product-spec.md`](docs/product-spec.md) — functional scope and product rules
 - [`docs/architecture.md`](docs/architecture.md) — technical architecture and domain model
+- [`docs/data-sources.md`](docs/data-sources.md) — official Swiss training-data source strategy
 - [`docs/roadmap.md`](docs/roadmap.md) — implementation phases
+- [`docs/adr/`](docs/adr/) — architecture decision records
 
 ## Legacy project
 
